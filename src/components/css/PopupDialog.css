@@ -1,0 +1,252 @@
+.main-dialog{
+    width:50rem;
+    height:36.5rem;
+    margin-top: -5rem;
+    background-color:white;
+    border: 1px solid white;
+    border-radius: 1rem;
+    position:absolute;
+    bottom:8%;
+    left:20%;
+    z-index:5;
+}
+.section-header > div{
+    width:50%;
+    text-align: center;
+    cursor:pointer;
+}
+.instruction-block{
+    color: #2e69ff;
+    background-color: #ebf0ff;
+}
+.active{
+    border-bottom:3px solid #2e69ff;
+}
+#profile-icon{
+    width:0.7rem;
+    height:0.5rem;
+    border-radius: 50%;
+}
+
+.post-visibility{
+    color:grey;
+}
+
+.visibility-choice{
+    display:none;
+}
+
+/* Dropdown button & display*/
+.dropdown-button{
+    padding: 0.1rem 0.75rem;
+    display:flex;
+    border: 1px solid grey;
+    border-radius: 1.2rem;
+    font-size: 0.8rem;
+    width:7.5rem;
+    height: 2rem;
+}
+.dropdown-button:hover{
+    border: 1px solid grey;
+}
+
+.caret-down-icon{
+    margin-left:0.85rem;
+}
+
+.dropdown-visibility{
+    width:20rem;
+    height:13rem;
+}
+.dropdown-item{
+    cursor: pointer;
+}
+.desc > span:nth-child(1){
+    display:inline-block;
+}
+
+.visibility-choice{
+    display:none;
+    transform: translate(1rem,-2rem)
+
+}
+
+.list-content{
+    font-size: 0.9rem;
+    width:14rem;
+    height:auto;
+    white-space: normal;
+}
+
+/* Popup Footer */
+.footer{
+    width:inherit;
+    height:3rem;
+    position: relative;
+    top:16%;
+    right:8%;
+}
+
+.footer .btn{
+    padding:0.5rem 1rem;
+    border-radius:1.2rem;
+}
+
+.cancel-btn:hover{
+    background-color: #f1efef;
+}
+
+/* Create post popup category*/
+.space-dropdown{
+    transform:translateX(15rem);
+}
+
+.space-dropdown button{
+    border-radius:1.2rem;
+}
+
+.space-dropdown button:hover{
+    background-color: #e6e6e6;
+}
+#label-placeholder{
+    position:relative;
+    top:2rem;
+    left:0.5rem;
+    color:grey;
+    opacity:0.5;
+}
+
+.menu-popup{
+    width:15rem;
+}
+
+.post-useridentity{
+    display:flex;
+    justify-content: flex-start;
+}
+
+#profile-picture{
+    width:3rem;
+    height:3rem;
+    border-radius:50%;
+}
+
+#user-pic{
+    width:inherit;
+    height:inherit;
+    border-radius: inherit;
+}
+.post-useridentity .username{
+    font-size: 0.85rem;
+}
+.post-useridentity .credentials{
+    border:2px solid #e6e6e6;
+    border-radius: 1.2rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
+}
+#post-area{
+    width:48rem;
+    height:12rem;
+    overflow:scroll;
+}
+#text-post{
+    width:inherit;
+    outline:none;
+    border:none;
+    white-space: normal;
+}
+.support-image{
+    width:40rem;
+    height:auto;
+}
+/* Upload image button */
+.file-button{
+    background-color: white;
+    border:none;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    position:relative;
+    left:10%;
+}
+.file-button input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+/* Responsiveness */
+@media(max-width:991px){
+    #text-post{
+        width:39rem; 
+     }
+     .footer{
+        right:15%;
+     }
+     .file-button{
+        left:15%;
+     }
+}
+@media(max-width:984px){
+    .main-dialog{
+        width:42rem;
+    }
+    .footer{
+        right:10%;
+     }
+}
+@media(max-width:767px){
+    .main-dialog{
+        width:35rem;
+    }
+    #text-post{
+        width:28rem; 
+     }
+     .space-dropdown{
+        transform:translateX(10rem)
+     }
+}
+
+@media(max-width:576px){
+    .main-dialog{
+        width:27rem;
+    }
+    .space-dropdown{
+        transform:translateX(7rem)
+     }
+    #text-post{
+        width:22rem; 
+     }
+    .instruction-block h5{
+        font-size: 1rem;
+    }
+    .instruction-block ul li{
+        font-size: 0.8rem;
+    }
+    .footer{
+        top:20%;
+    }
+}
+
+@media(max-width:446px){
+    .main-dialog{
+        width:22rem;
+    } 
+    .space-dropdown{
+        transform:translateX(4rem)
+     }
+    #text-post{
+        width:18rem; 
+     }
+}

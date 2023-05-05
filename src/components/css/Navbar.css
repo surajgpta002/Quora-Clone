@@ -1,0 +1,139 @@
+#pri-logo{
+    width: 7rem;
+    height: 2rem;
+}
+
+.navbar-brand:hover{
+    opacity:0.6;
+}
+.navbar{
+    padding-top:0.4rem;
+    padding-bottom: 0;
+    background-color: white;
+}
+.navbar > .container-fluid{
+    padding: 0 8rem;
+}
+
+.nav-link:hover{
+    opacity:0.7;
+    background-color: #f3f0f0;
+}
+#default-hover{
+    opacity:1;
+    background-color: white;
+}
+
+.hover-help{
+    background-color: white;
+    padding: 0.4rem 1rem;
+    position:absolute;
+    z-index:5;
+    top:4.5rem;
+    transform:translateX(-1rem);
+    display: none;
+}
+#floating-span{
+    position:absolute;
+    bottom:0.6rem;
+    left:3%;
+    opacity:0.6;
+}
+.placeholder-text{
+    position:relative;
+    top:0.2rem;
+}
+#search-form{
+ position:relative;
+}
+#searchBar:hover{
+    outline: 1px solid blue;
+}
+#searchBar{
+    position:relative;
+    width:18rem;
+    z-index:5;
+    background-color:transparent;
+}
+
+#quoraPlus{
+    padding:0.5rem;
+    background-color: white;
+    border: 1px solid grey;
+}
+#profile-pic{
+    width:1.5rem;
+    height:1.5rem;
+    border: 1px solid #e6e6e6;
+    border-radius:50%;
+    
+}
+
+#profile-image{
+    margin-left:75%;
+}
+
+#quoraPlus:hover{
+    background-color: #e6e6e6;
+}
+#dropdown-block{
+    min-width:8rem;
+    margin-top:0.5rem;
+    height:2rem;
+    background-color:#dc3545;
+    border-radius: 1.5rem;
+}
+#dropdown-block> button{
+    font-size: 0.7rem;
+    border-radius: 1.5rem;
+}
+
+.activated-header{
+    padding-bottom: 0.5rem;
+    border-bottom:2px solid #dc3545;
+}
+
+.toggle-view{
+    display:none;
+}
+
+span.toggle-view:hover{
+    padding:0.3rem;
+    background-color: #e6e6e6;
+}
+
+.create-post-menu li:hover{
+    cursor:pointer;
+}
+/* Responsiveness */
+@media(max-width:1310px){
+    .navbar{
+        padding:0;
+    }
+    .navbar .container-fluid{
+        padding: 0 0.5rem;
+    }
+}
+
+@media(max-width:991px){
+    .toggle-view{
+        display: block;
+    }
+    .icon-Link,.rem-sm{
+        display:none;
+    }
+    #profile-image{
+        margin-left:65%;
+    }
+}
+@media(max-width:775px){
+    #profile-image{
+        margin-left:45%;
+    }
+}
+
+@media(max-width:440px){
+    #profile-image{
+        margin-left:25%;
+    }
+}
